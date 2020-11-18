@@ -5,8 +5,7 @@
 class classElement {
     
     private:
-        int value;
-        int size;
+        int elementValue;
         classElement *previousElementObject;
         classElement *nextElementObject;
 
@@ -19,8 +18,8 @@ class classElement {
 
         /* get */
         int getElementValue();
-        int getNextElementObject();
-        int getPreviousElementObject();
+        classElement * getNextElementObject();
+        classElement * getPreviousElementObject();
 
         /* constructor */
         classElement();
