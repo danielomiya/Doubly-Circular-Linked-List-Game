@@ -3,7 +3,7 @@
 
 namespace doublyLinkedListNamespace {
 
-    class classDoublyLinkedList {
+    class DoublyLinkedList {
         
         private:
 

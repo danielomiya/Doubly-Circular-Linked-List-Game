@@ -2,27 +2,27 @@
 #define elementHeader
 
 
-class classElement {
+class Element {
     
     private:
         int elementValue;
-        classElement *previousElementObject;
-        classElement *nextElementObject;
+        Element *previousElementObject;
+        Element *nextElementObject;
 
     public:
     
         /* set */
         void setValue(int newValue);
-        void setPreviousElementObject(classElement *pointer);
-        void setNextElementObject(classElement *pointer);
+        void setPreviousElementObject(Element *pointer);
+        void setNextElementObject(Element *pointer);
 
         /* get */
         int getElementValue();
-        classElement * getNextElementObject();
-        classElement * getPreviousElementObject();
+        Element * getNextElementObject();
+        Element * getPreviousElementObject();
 
         /* constructor */
-        classElement();
+        Element();
 };
 
 

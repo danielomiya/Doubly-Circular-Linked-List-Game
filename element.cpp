@@ -1,31 +1,31 @@
 #include <stdlib.h>
 #include "element.h"
 
-classElement::classElement(){
-    previousElementObject = NULL;
-    nextElementObject = NULL;
+Element::Element(){
+    previousElementObject = nullptr;
+    nextElementObject = nullptr;
 }
 
-void classElement::setValue(int newValue){
+void Element::setValue(int newValue){
     elementValue = newValue;
 }
 
-void classElement::setNextElementObject(classElement *pointer){
+void Element::setNextElementObject(Element *pointer){
     nextElementObject = pointer;
 }
 
-void classElement::setPreviousElementObject(classElement *pointer){
+void Element::setPreviousElementObject(Element *pointer){
     previousElementObject = pointer;
 }
 
-int classElement::getElementValue(){
+int Element::getElementValue(){
     return elementValue;
 }
 
-classElement * classElement::getNextElementObject(){
+Element * Element::getNextElementObject(){
     return nextElementObject;
 }
 
-classElement * classElement::getPreviousElementObject(){
+Element * Element::getPreviousElementObject(){
     return previousElementObject;
 }
