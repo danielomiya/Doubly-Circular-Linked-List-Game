@@ -10,12 +10,12 @@ void classElement::setValue(int newValue){
     elementValue = newValue;
 }
 
-void classElement::setNextElementObject(classElement *pointer){
-    nextElementObject = pointer;
+void classElement::setNextElementObject(classElement * object){
+    nextElementObject = object;
 }
 
-void classElement::setPreviousElementObject(classElement *pointer){
-    previousElementObject = pointer;
+void classElement::setPreviousElementObject(classElement * object){
+    previousElementObject = object;
 }
 
 int classElement::getElementValue(){
