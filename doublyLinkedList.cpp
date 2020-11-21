@@ -1,6 +1,10 @@
-#include <sstream>
 #include "doublyLinkedList.h"
+#include <sstream>
 #include "element.h"
+
+Element* DoublyLinkedList::cursor() {
+    return headElem;
+}
 
 bool DoublyLinkedList::empty() {
     return headElem == nullptr;
@@ -26,7 +30,7 @@ void DoublyLinkedList::push(int data) {
 
 std::string DoublyLinkedList::stringify() {
     std::stringstream stream;
-    Element *cursor = headElem;
+    Element* cursor = headElem;
 
     if (cursor == nullptr) {
         return std::string("[ ]");
