@@ -1,29 +1,26 @@
-#ifndef elementHeader 
+#ifndef elementHeader
 #define elementHeader
 
-
 class Element {
-    
-    private:
-        int elementValue;
-        Element *previousElementObject;
-        Element *nextElementObject;
+   private:
+    int value;
+    Element* prevElem;
+    Element* nextElem;
 
-    public:
-    
-        /* set */
-        void setValue(int newValue);
-        void setPreviousElementObject(Element *pointer);
-        void setNextElementObject(Element *pointer);
+   public:
+    /* setters */
+    void data(int newValue);
+    void prev(Element* pointer);
+    void next(Element* pointer);
 
-        /* get */
-        int getElementValue();
-        Element * getNextElementObject();
-        Element * getPreviousElementObject();
+    /* getters */
+    int data();
+    Element* next();
+    Element* prev();
 
-        /* constructor */
-        Element();
+    /* constructor */
+    Element();
+    Element(int content);
 };
-
 
 #endif
