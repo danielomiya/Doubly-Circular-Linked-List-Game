@@ -1,9 +1,10 @@
 #include <stdlib.h>
+#include <sstream>
 #include "element.h"
 
 classElement::classElement(){
-    previousElementObject = NULL;
-    nextElementObject = NULL;
+    previousElementObject = nullptr;
+    nextElementObject = nullptr;
 }
 
 void classElement::setValue(int newValue){

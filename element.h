@@ -11,12 +11,12 @@ class classElement {
 
     public:
     
-        /* set */
+        /* setters */
         void setValue(int newValue);
         void setPreviousElementObject(classElement *pointer);
         void setNextElementObject(classElement *pointer);
 
-        /* get */
+        /* getters */
         int getElementValue();
         classElement * getNextElementObject();
         classElement * getPreviousElementObject();

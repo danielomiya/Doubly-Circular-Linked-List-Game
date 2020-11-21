@@ -1,7 +1,9 @@
 #ifndef doublyCircularLinkedListHeader 
 #define doublyCircularLinkedListHeader
 
+#include <sstream>
 #include "element.h"
+
 class classDoublyCircularLinkedList {
     
     private:
@@ -20,9 +22,10 @@ class classDoublyCircularLinkedList {
         /* get */
         int getNumberOfElements();
         int elementValueByIndex(int index);
+        bool empty();
         classElement* nextElement(classElement * element);
         classElement* previousElement(classElement * element);
-
+        std::string stringify();
 
         /* print */
         void print();

@@ -5,7 +5,7 @@
 
 
 classDoublyCircularLinkedList::classDoublyCircularLinkedList(){
-    tailElement = NULL;
+    tailElement = nullptr;
     numberOfElements = 0;
 }
 
@@ -33,6 +33,10 @@ void classDoublyCircularLinkedList::addElementBeginning(int elementValue){
     numberOfElements++;
 }
 
+bool DoublyLinkedList::empty() {
+    return headElem == nullptr;
+}
+
 void classDoublyCircularLinkedList::print(){
     std::cout << "\n [";
     classElement * cursor = tailElement;
@@ -47,3 +51,21 @@ void classDoublyCircularLinkedList::print(){
     
 }
 
+std::string DoublyLinkedList::stringify() {
+    std::stringstream stream;
+    Element* cursor = headElem;
+
+    if (cursor == nullptr) {
+        return std::string("[ ]");
+    }
+
+    stream << "[ ";
+
+    do {
+        stream << cursor->data() << " ";
+    } while (cursor != headElem);
+
+    stream << "]";
+
+    return stream.str();
+}
