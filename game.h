@@ -12,18 +12,18 @@ enum BoardDirection {
 };
 
 class Game {
-   private:
-    int nPlayers;
-    int nSteps;
-    int nCoins;
+    private:
+        int nPlayers;
+        int nSteps;
+        int nCoins;
 
-    classDoublyCircularLinkedList *gameBoard;
+        classDoublyCircularLinkedList *gameBoard;
 
-   public:
-    Game();
-    ~Game();
+    public:
+        Game();
+        ~Game();
 
-    void start();
+        void start();
 };
 
 #endif

@@ -1,8 +1,10 @@
 #include <iostream>
+#include <stdlib.h>
+#include <sstream>
 #include "game.h"
 
 Game::Game() {
-    gameBoard = new DoublyLinkedList();
+    gameBoard = new classDoublyCircularLinkedList();
 }
 
 Game::~Game() {
