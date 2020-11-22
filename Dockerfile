@@ -4,7 +4,12 @@ FROM gcc:latest
     
     WORKDIR /usr/src/DCLLG
 
-    RUN g++ -o DCLLG main.cpp
+    RUN apt-get update \
+            && apt-get install cmake -y \
+            && mkdir build \
+            && cd build \
+            && cmake .. \
+            && make
 
-    CMD ["./DCLLG"]
+    CMD ["./build/main"]
 
