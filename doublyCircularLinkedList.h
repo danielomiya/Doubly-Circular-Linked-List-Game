@@ -12,14 +12,14 @@ class classDoublyCircularLinkedList {
 
     public:
 
-        /* set */
+        /* setters */
         void setNumberOfElements(int value);
         void addElementBeginning(int elementValue);
         void addElementEnd(int elementValue);
         void addElement(int previousElement, int elementValue);
         void removeElement(int elementIndex);
 
-        /* get */
+        /* getters */
         int getNumberOfElements();
         int elementValueByIndex(int index);
         bool empty();
