@@ -14,6 +14,7 @@ class classDoublyCircularLinkedList {
 
         /* setters */
         void setNumberOfElements(int value);
+        void setElementValueByIndex(int index, int value);
         void addElementBeginning(int elementValue);
         void addElementEnd(int elementValue);
         void addElement(int previousElement, int elementValue);

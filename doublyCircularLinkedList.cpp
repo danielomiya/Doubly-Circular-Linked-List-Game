@@ -149,3 +149,16 @@ void classDoublyCircularLinkedList::addElement(int previousElement, int elementV
     nextElement->setPreviousElementObject(element);
     cursor->setNextElementObject(element);
 }
+
+void classDoublyCircularLinkedList::setElementValueByIndex(int index, int value){
+    classElement * cursor = tailElement;
+    cursor->getNextElementObject();
+    int count = 0;
+    
+    while (count != index){
+        cursor->getNextElementObject();
+        count++;
+    }
+
+    cursor->setValue(value);
+}
