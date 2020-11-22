@@ -2,6 +2,8 @@
 #include <sstream>
 #include "element.h"
 
+using namespace std; 
+
 classElement::classElement(){
     previousElementObject = nullptr;
     nextElementObject = nullptr;

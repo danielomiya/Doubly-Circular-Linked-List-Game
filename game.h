@@ -1,7 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "doublyLinkedList.h"
+#include "doublyCircularLinkedList.h"
 
 #define MIN_PLAYERS 2
 #define MIN_STEPS   10
@@ -17,7 +17,7 @@ class Game {
     int nSteps;
     int nCoins;
 
-    DoublyLinkedList *gameBoard;
+    classDoublyCircularLinkedList *gameBoard;
 
    public:
     Game();
