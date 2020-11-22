@@ -6,8 +6,8 @@ class classElement {
     
     private:
         int elementValue;
-        classElement *previousElementObject;
-        classElement *nextElementObject;
+        classElement * previousElementObject;
+        classElement * nextElementObject;
 
     public:
     
