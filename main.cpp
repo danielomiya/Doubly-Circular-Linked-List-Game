@@ -4,7 +4,14 @@
 #include "utils.h"
 
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/* 
+ 
+    Daniel Omiya - 41995449
+	Guilherme Heitor Alvarenga Pensutti - 41921704
+    Hugo Amorim - 41991184
+    Nicole Martins - 41990277
+
+*/
 
 int main(int argc, char** argv) {
 	Game game;
