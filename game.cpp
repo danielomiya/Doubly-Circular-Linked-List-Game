@@ -67,6 +67,7 @@ void Game::start() {
 
     int past = 1;
     int prime = 0;
+    int elementValue;
 
     for (int i = 0; i < nPlayers; i++){
         prime = generateNextPrimeNumber(past);
@@ -102,7 +103,7 @@ void Game::start() {
                 cursor++;
             }
 
-            int elementValue = gameBoard->elementValueByIndex(cursor);
+            elementValue = gameBoard->elementValueByIndex(cursor);
             
             gameBoard->setElementValueByIndex(cursor, elementValue - playersList[i]);
 
@@ -110,7 +111,7 @@ void Game::start() {
                 cursor++;
             }
             
-            int elementValue = gameBoard->elementValueByIndex(cursor);
+            elementValue = gameBoard->elementValueByIndex(cursor);
             
             gameBoard->setElementValueByIndex(cursor, elementValue + playersList[i]);
 
